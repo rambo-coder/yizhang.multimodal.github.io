@@ -1,0 +1,6 @@
+@InProceedings{chirality20,
+  title={Visual Chirality},
+  author = {Zhiqiu Lin and Jin Sun and Abe Davis and Noah Snavely},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}

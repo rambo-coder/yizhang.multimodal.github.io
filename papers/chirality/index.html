@@ -1,0 +1,445 @@
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157005192-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157005192-2');
+</script>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<script type="text/javascript">
+function make_visible(id){
+  document.getElementById(id).style.opacity=1;
+  var toRemove= document.getElementById('a'+id)
+  toRemove.parentNode.removeChild(toRemove);
+}
+</script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<html>
+  <head>
+    <title>Visual Chirality</title>
+    <meta property="og:title" content="Visual Chirality" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Visual Chirality</span>
+    </center>
+
+    <br><br>
+      <table align=center width=800px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px"><a href="http://linzhiqiu.github.io">Zhiqiu Lin<sup>1</sup></a></span>
+         </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://www.cs.cornell.edu/~jinsun/">Jin Sun<sup>1,2</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="http://abedavis.com">Abe Davis<sup>1,2</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <center>
+          <span style="font-size:20px"><a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely<sup>1,2</sup></a></span>
+          </center>
+        </td>
+     </tr>
+     </table>
+
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px">Cornell University<sup>1</sup></span>
+         </td>
+        <td align=center width=100px>
+          <span style="font-size:20px">Cornell Tech<sup>2</sup></span>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+    
+
+    <!-- <br>
+      <table align=center width=400px>
+        <tr>
+          <td align=center width=100px>
+            <span style="font-size:20px; text-align:center;"><a href="https://www.google.com">[Paper]</a></span>
+          </td>
+          <td align=center width=100px>
+            <center>
+            <span style="font-size:20px"><a href="https://www.google.com">[Video]</a></span>
+            </center>
+          </td>
+        </tr>
+      </table> -->
+
+      <center>
+        <h1>CVPR 2020 Oral Presentation</h1>
+      </center>
+      <table align=center width=900px>
+        <tr>
+          <td width=600px>
+            <center>
+              <div class="video">
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/gc5IvTozU9M" frameborder="0"
+                  allowfullscreen></iframe>
+              </div>
+            </center>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <p align=center style="width:1000px; padding: 0px 0px 0px 60px">And please check out our paper, supplemental, and code using the following links:</p>
+            <table align=center width=400px>
+              <tr>
+                <td align=center width=100px>
+                  <span style="font-size:20px; text-align:center;"><a href="main.pdf">[Paper]</a></span>
+                </td>
+                <td align=center width=100px>
+                  <center>
+                    <span style="font-size:20px"><a href="supp.pdf">[Supplemental]</a></span>
+                  </center>
+                </td>
+                <td align=center width=100px>
+                  <center>
+                  <span style="font-size:20px"><a href="https://github.com/linzhiqiu/digital_chirality">[Code]</a></span>
+                  </center>
+                </td>
+              </tr>
+            </table>
+      <br>
+      <hr>
+      <table align=center width=1000px>
+        <tr>
+          <center>
+            <h1>Teaser: Are these images flipped?</h1>
+          </center>
+          <td valign="middle" halign="middle">
+            <center>
+              <div class="slide-container" onclick="make_visible('t1')">
+                <img src = "./images/teaser/text_teaser.png" height="250px"></img><br>
+              </div>
+
+            </center>
+          </td>
+          <td valign="middle" halign="middle" >
+            <center>
+              <div class="slide-container" onclick="make_visible('t2')">
+              <img src = "./images/teaser/button_teaser.png" height="250px"></img><br>
+              </div>
+            </center>
+          </td>
+          <td valign="middle" halign="middle">
+            <center>
+              <div class="slide-container" onclick="make_visible('t3')">
+              <img src = "./images/teaser/guitar_teaser.png" height="250px"></img><br>
+              </div>
+            </center>
+          </td>
+        </tr>
+        <tr>
+          <!-- <td colspan="2"> -->
+          <td>
+            <div class='teaser'>
+            <span style="font-size:14px; text-align:center;">
+              <strong>Is this image flipped? </strong> <span id='at1'><i>[Click it for answer!]</i></span>
+            </span>
+            <span id='t1' style="font-size:14px; text-align:center; opacity: 0;">
+              <br><strong style="color:red">Yes!</strong> <br /> [Text chirality]<i> Text (in any language) is strongly chiral. </i>
+            </span>  </div>
+          </td>
+          <td>
+            <div class='teaser'>
+            <span style="font-size:14px; text-align:center;">
+              <strong>Is this image flipped? </strong> <span id='at2'><i>[Click it for answer!]</i></span>
+            </span>
+            <span id='t2' style="font-size:14px; text-align:center; opacity: 0;">
+              <br><strong style="color:red">No!</strong> <br /> [Object chirality]<i> The shirt collar, and in particular which side the buttons are on, exhibit more subtle visual chirality.</i>
+            </span>  </div>
+          </td>
+          <td>
+            <div class='teaser'>
+            <span style="font-size:14px; text-align:center; ">
+              <strong>Is this image flipped? </strong> <span id='at3'><i>[Click it for answer!]</i></span>
+            </span>
+            <span id='t3' style="font-size:14px; text-align:center; opacity: 0;">
+              <br><strong><span style="color:red">Yes!</span></strong> <br /> [Object interaction chirality]<i> While guitars are often (nearly) symmetric, the way we hold them is not (the left hand is usually on the fretboard).</i>
+            </span>  </div>
+          </td>
+        </tr>
+      </table>
+        <br><br>
+    <p align=left style="width:1000px; padding: 0px 0px 0px 60px">How can we tell whether an image has been mirrored? While we understand the geometry of mirror reflections very well, less has been said about how it affects distributions of imagery at scale, despite widespread use for data augmentation in computer vision. In this paper, we investigate how the statistics of visual data are changed by reflection. We refer to these changes as ''visual chirality'', after the concept of geometric chirality -- the notion of objects that are distinct from their mirror image. Our analysis of visual chirality reveals surprising results, including low-level chiral signals pervading imagery stemming from image processing in cameras, to the ability to discover visual chirality in images of people and faces. Our work has implications for data augmentation, self-supervised learning, and image forensics.</p>
+
+      <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>Examples of Visual Chirality</h1></center>
+       <p align=center style="width:1000px; padding: 0px 0px 0px 60px">Below are examples of clusters of high level visual chirality cues we found by training on the Instagram dataset.</p> <br>
+          <tr>
+            
+            <td width=100px><span style="font-size:14pt"><strong>Phones</strong></td><td>
+              <div class="slideup-container">
+              <img src = "./images/instaclusters/phones/teaser.jpg" height="250px"></img><br>
+              </div>
+              </td>
+          </tr>
+
+          <tr>
+            
+            <td width=100px><span style="font-size:14pt"><strong>Collars</strong></td><td>
+              <div class="slideup-container">
+              <img src = "./images/instaclusters/shirtcollars/teaser.jpg" height="250px"></img><br>
+              </div>
+              </td>
+          </tr>
+
+          <tr>
+            
+            <td width=100px><span style="font-size:14pt"><strong>Pockets</strong></td><td>
+              <div class="slideup-container">
+              <img src = "./images/instaclusters/shirtpockets/teaser.jpg" height="250px"></img><br>
+              </div>
+              </td>
+          </tr>
+
+          <tr>
+            
+            <td width=100px><span style="font-size:14pt"><strong>Faces</strong></td><td>
+              <div class="slideup-container">
+              <img src = "./images/instaclusters/faces/teaser.jpg" height="250px"></img><br>
+              </div>
+              </td>
+          </tr>
+
+          <tr>
+            
+            <td width=100px><span style="font-size:14pt"><strong>Watches</strong></td><td>
+              <div class="slideup-container">
+              <img src = "./images/instaclusters/watches/teaser.jpg" height="250px"></img><br>
+              </div>
+              </td>
+          </tr>
+      </table>
+
+      <br><br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>Chirality cues in human faces</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">By training on the <a href="https://github.com/NVlabs/ffhq-dataset">Flickr-Faces-HQ</a> dataset, we also discovered that human faces are especially chiral (i.e., a ResNet model trained to identify whether a random FFHQ face image has been flipped or not could achieve a test accuracy over 80%). Again, we clustered the chirality cues in human faces (as below), and we provide some analysis of these clusters in our paper.</p> <br>
+
+          <tr>
+            
+            <td>
+              <img src = "./images/new_faces/beard/final.png" height="350px"></img><br>
+              </td>
+
+            <td>
+              <img src = "./images/new_faces/hair/final.png" height="350px"></img><br>
+              </td>
+          </tr>
+
+          <tr>
+            <td><span style="font-size:14pt"><strong>Beard</strong></span></td>
+            <td><span style="font-size:14pt"><strong>Hair Part</strong></span></td>
+          </tr>
+          <tr>
+            
+            <td>
+              <img src = "./images/new_faces/eye/final.png" height="350px"></img><br>
+              </td>
+
+             <td>
+              <img src = "./images/new_faces/dimple/final.png" height="350px"></img><br>
+              </td>
+          </tr>
+
+          <tr>
+            <td><span style="font-size:14pt"><strong>Eye Gaze</strong></span></td>
+            <td><span style="font-size:14pt"><strong>Dimple</strong></span></td>
+          </tr>
+      </table>
+
+      <br><br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>The Chirality of Image Processing</h1></center>
+         <p align=left style="width:1000px; padding: 0px 0px 0px 60px">When we first attempted to train our model to distinguish between images and their reflections, we quickly observed that the network would find ways to accomplish this task using low-level cues that appeared only loosely correlated with the image content. Furthermore, the strength of these cues seemed to vary a great deal with changes in how data was prepared. In particular, we found that the way we capture and process visual data -- even down to the level of Bayer mosaics in cameras or JPEG compression -- can have a significant impact on its chirality. In the supplemental material we develop theoretical tools based on a commutative test to help reason about that impact, and use this theory to predict what networks will learn in synthetic experiments. All the analysis, tests, and experiments are available in Python code (Check out our <a href="https://github.com/linzhiqiu/digital_chirality">git repository</a>).</p> <br>
+          <tr>
+            <td><a href="supp.pdf"><img style="width:800px" src="./images/commutative_test.png"/></a></td>
+          </tr>
+      </table>
+
+      <br><br>
+      <hr>
+      <table align=center width=900>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="full.pdf"><img style="width:400px" src="./images/simple_chirality.png"/></a></td>
+            <td><span style="font-size:14pt">Zhiqiu Lin, Jin Sun, Abe Davis, and Noah Snavely.<br>
+                Visual Chirality.<br>
+              CVPR 2020 (Best Paper Nominee; Oral Presentation).<br>
+                <a href="full.pdf">[Paper]</a> &nbsp; &nbsp;
+                <a href="supp.pdf">[Supplemental]</a> &nbsp; &nbsp;
+                <a href="https://arxiv.org/abs/2006.09512">[Arxiv]</a>&nbsp; &nbsp;
+              <!-- </span><br><br> -->
+              
+              </td>
+          
+          </tr>
+            
+      </table> <br>
+      <center>Bibtex:</center> <br>
+      <div align=center style="width:800">
+      <pre><code>@InProceedings{chirality20,
+  title={Visual Chirality},
+  author = {Zhiqiu Lin and Jin Sun and Abe Davis and Noah Snavely},
+  booktitle={Computer Vision and Pattern Recognition (CVPR)},
+  year={2020}
+}</code></pre></div>
+
+
+      <br>
+      <!-- <hr>
+      <h1>Code</h1>
+      <table align=center width=1000px>
+        <tr style="text-align:center;">
+          <center>
+            <img class="round" style="width:90%; text-align:center;" src="./resources/images/overview.jpg"/>
+          </center>
+        </tr>
+      </table>
+
+      <table align=center width=800px>
+        <tr>
+          <center> <br>
+            <span style="font-size:28px">&nbsp;<a href='https://github.com/akanazawa/human_dynamics/tree/master'>[GitHub]</a>  </span>
+            <span style="font-size:28px"><a></a></span>
+            <br>
+          </center>
+        </tr>
+      </table> -->
+
+      <!-- <hr>
+      <h2>Demo Results</h2>
+
+
+    <div>
+      <video autoplay loop muted playsinline width="49%">
+        <source src="resources/videos/demo_results/insta_variety-tabletennis_43078913_895055920883203_6720141320083472384_n_short.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="49%">
+        <source src="resources/videos/demo_results/insta_variety-tabletennis_43078913_895055920883203_6720141320083472384_n_short_1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div>
+
+      <video autoplay loop muted playsinline width="28%">
+        <source src="resources/videos/demo_results/insta_variety-hammerthrow_44692705_761535737521282_2601145950961401856_n.mp4" type="video/mp4">
+      </video>
+
+      <video autoplay loop muted playsinline width="35%">
+        <source src="resources/videos/demo_results/insta_variety-dunking_45062340_271806740144972_8388967432928100352_n_short.mp4" type="video/mp4">
+      </video>
+
+      <video autoplay loop muted playsinline width="35%">
+        <source src="resources/videos/demo_results/insta_variety-dunking_45062340_271806740144972_8388967432928100352_n_short_1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <div>
+      <video autoplay loop muted playsinline width="49.061%">
+        <source src="resources/videos/demo_results/davis-hike.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="48.939%">
+        <source src="resources/videos/demo_results/penn_action-2278.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <div>
+      <video autoplay loop muted playsinline width="37.69%">
+        <source src="resources/videos/demo_results/penn_action-0025.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="37.69%">
+        <source src="resources/videos/demo_results/penn_action-0191.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="22.615%">
+        <source src="resources/videos/demo_results/insta_variety-penaltykick_41547959_335548243685531_1308440788490774406_n.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div>
+      <video autoplay loop muted playsinline width="49%">
+        <source src="resources/videos/demo_results/davis-running.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="49%">
+        <source src="resources/videos/demo_results/davis-running_1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div>
+      <video autoplay loop muted playsinline width="32.6666%">
+        <source src="resources/videos/demo_results/insta_variety-hopscotch_43813243_2107404859281597_3742315295469993984_n_short.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="32.6666%">
+        <source src="resources/videos/demo_results/insta_variety-javelinthrow_43507032_402312343639705_4410464175189790871_n.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted playsinline width="32.6666%">
+        <source src="resources/videos/demo_results/insta_variety-instagolf_43360267_1374021216067656_1767444579209969664_n.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div>
+      <video autoplay loop muted playsinline width="56%">
+        <source src="resources/videos/demo_results/penn_action-0910.mp4" type="video/mp4">
+      </video>
+
+      <video autoplay loop muted playsinline width="42%">
+        <source src="resources/videos/demo_results/penn_action-0486.mp4" type="video/mp4">
+      </video>
+    </div>
+
+      <br>
+
+      <hr>
+
+    <h1>More Results</h1>
+      <table align=center width=900px>
+        <tr>
+          <td width=600px>
+              <div class="video">
+                <iframe width="720" height="405" src="https://www.youtube.com/embed/9fNKSZdsAG8?start=300" frameborder="0" allowfullscreen></iframe>
+              </div>
+          </td>
+          </tr>
+      </table>
+
+ -->    <br>
+
+    <hr>
+
+
+      <table align=center width=1100px>
+        <tr>
+          <td>
+            <left>
+              <center>
+                <h1>Acknowledgements</h1>
+              </center>
+              This research was supported in part by the generosity of Eric and Wendy Schmidt by recommendation of the Schmidt Futures program.
+            </left>
+          </td>
+        </tr>
+      </table>
+
+      <br><br>
+</body>
+</html>

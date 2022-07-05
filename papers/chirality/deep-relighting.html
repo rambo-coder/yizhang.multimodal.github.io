@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" type="text/css" href="css/style.css"></head><body>
+<div class="logos" style="left: 0; padding-left: 30">
+<img src="img/inria-logo.jpg" style="width:200px;"/><br/>
+<a href="https://team.inria.fr/graphdeco/fr/" style="display: inline-block;position:relative;top:-30px;"><img src="img/header-graphdeco.png" style="width:130px;"/></a>
+<img src="img/adobe-logo.png" style="width:50px;"/></div><div class="logos" style="right: 0; padding-right: 30"><img src="img/berkeleylogo.png" style="width:200px;"/><br/><img src="img/siggraph-logo.png" style="width:200px;"/></div><h1 class="index-title">Multi-view Relighting Using a<br/> Geometry-Aware Network</h1><hr style="margin: 30px auto; width: 400px"><table style="padding: 30px 0px 30px 0px" class="authors"><tr><td><a href="https://www-sop.inria.fr/members/Julien.Philip/">Julien Philip</a></td><td><a href="https://research.adobe.com/person/michael-gharbi/">Micha&euml;l Gharbi</a></td><td><a href="https://people.eecs.berkeley.edu/~tinghuiz/">Tinghui Zhou</a></td><td><a href="https://people.eecs.berkeley.edu/~efros/">Alexei (Alyosha) Efros</a></td><td><a href="https://www-sop.inria.fr/members/George.Drettakis/">George Drettakis</a></td></tr><tr><td>Universit&eacute; C&ocirc;te d'Azur, Inria</td><td>Adobe</td><td>UC Berkeley</td><td>UC Berkeley</td><td>Universit&eacute; C&ocirc;te d'Azur, Inria</td></tr></table>
+
+
+<img class="imTeaserL" src="img/manarola/ManarolaInput.jpg" />
+<img class="imTeaser" src="img/manarola/ManarolaRelit1.jpg" />
+<img class="imTeaser" src="img/manarola/ManarolaRelit2.jpg" />
+<img class="imTeaser" src="img/manarola/ManarolaRelit3.jpg" />
+<img class="imTeaser" src="img/manarola/ManarolaRelit4.jpg" /><br/>
+
+<img class="imTeaserL" src="img/trevi/00083.jpg" />
+<img class="imTeaser" src="img/trevi/r1.jpg" />
+<img class="imTeaser" src="img/trevi/r3.jpg" />
+<img class="imTeaser" src="img/trevi/r4.jpg" />
+<img class="imTeaser" src="img/trevi/r5.jpg" /><br/>
+
+
+
+<h1 style="text-align:center;font-family:sans-serif">PAPER</h1><div class="main">
+<a class="pdf" style="text-align:center;font-family:sans-serif" href="Multi-view-Relighting.pdf">Multi-view Relighting Using a Geometry-Aware Network
+<img class="doc" src="http://www-sop.inria.fr/reves/Basilic/images/pdf.png" style="padding-left:5px;" width="19" height="19" alt="pdf" /></a>
+
+<h2 style="text-align:center;font-family:sans-serif">Video</h2>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C_V8UpZYAQU " frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+<h2 style="text-align:center;font-family:sans-serif">Abstract</h2>
+<p style="font-size:15px;text-align:justify;">We propose the first learning-based algorithm that can relight images in
+a plausible and controllable manner given multiple views of an outdoor
+scene. In particular, we introduce a geometry-aware neural network that
+utilizes multiple geometry cues (normal maps, specular direction, etc.) and
+source and target shadow masks computed from a noisy proxy geometry
+obtained by multi-view stereo. Our model is a three-stage pipeline: two subnetworks
+refine the source and target shadow masks, and a third performs
+the final relighting. Furthermore, we introduce a novel representation for the
+shadow masks, which we call RGB shadow images. They reproject the colors
+from all views into the shadowed pixels and enable our network to cope
+with inacuraccies in the proxy and the non-locality of the shadow casting
+interactions. Acquiring large-scale multi-view relighting datasets for real
+scenes is challenging, so we train our network on photorealistic synthetic
+data. At train time, we also compute a noisy stereo-based geometric proxy,
+this time from the synthetic renderings. This allows us to bridge the gap
+between the real and synthetic domains. Our model generalizes well to real
+scenes. It can alter the illumination of drone footage, image-based renderings,
+textured mesh reconstructions, and even internet photo collections.</p>
+<h1 style="text-align:center;font-family:sans-serif">Funding and Acknowledgements</h1><div class="main">
+The authors thank G. Kopanas, L. Boiron and S. Morgenthaler for the development of the 3DSMax to Mitsuba exporter and ground truth rendering system. Thanks to A. Bousseau and K. Sunkavalli for proofreading earlier drafts. Funding was provided by the European Commission grants EMOTIVE H2020 project No. 727188 and ERC Advanced Grant FUNGRAPH (No. 788065, 
+<a href="http://fungraph.inria.fr"> http://fungraph.inria.fr </a>). Drone footage copyright Drones Yucatan and Namyeska - info@namyeska.com.
+
+<h1 style="text-align:center;font-family:sans-serif">Supplemental Materials and Results</h1><div class="main">
+<h2 style="text-align:center;font-family:sans-serif">Document</h2>
+<a class="pdf" style="text-align:center;font-family:sans-serif" href="Multi-view-Relighting-supplemental.pdf">Supplemental : Multi-view Relighting Using a Geometry-Aware Network
+<img class="doc" src="http://www-sop.inria.fr/reves/Basilic/images/pdf.png" style="padding-left:5px;" width="19" height="19" alt="pdf" /></a><h2 style="text-align:center;font-family:sans-serif">Results</h2>
+<a href="chichen/index.html"><div class="mainThumb"><img class="imThumb" src="chichen/00000064/input.png" /><span class="mainLink">Chichen</span></div></a>
+<a href="eilenroc/index.html"><div class="mainThumb"><img class="imThumb" src="eilenroc/00000003/input.png" /><span class="mainLink">Eilenroc</span></div></a>
+<a href="monastere_place/index.html"><div class="mainThumb"><img class="imThumb" src="monastere_place/00000003/input.png" /><span class="mainLink">Monastere place</span></div></a>
+<a href="montAlban/index.html"><div class="mainThumb"><img class="imThumb" src="montAlban/00000039/input.png" /><span class="mainLink">Montalban</span></div></a>
+<a href="ruins/index.html"><div class="mainThumb"><img class="imThumb" src="ruins/00000024/input.png" /><span class="mainLink">Ruins</span></div></a>
+<a href="russian_church/index.html"><div class="mainThumb"><img class="imThumb" src="russian_church/00000002/input.png" /><span class="mainLink">Russian church</span></div></a>
+<a href="SaintFelix/index.html"><div class="mainThumb"><img class="imThumb" src="SaintFelix/00000011/input.png" /><span class="mainLink">Saintfelix</span></div></a>
+<a href="stonehenge/index.html"><div class="mainThumb"><img class="imThumb" src="stonehenge/00000077/input.png" /><span class="mainLink">Stonehenge</span></div></a>
+<h2 style="text-align:center;font-family:sans-serif">Ablations</h2>
+<a href="eilenroc/indexAbl.html"><div class="mainThumb"><img class="imThumb" src="eilenroc/00000003/input.png" /><span class="mainLink">Eilenroc</span></div></a>
+<a href="russian_church/indexAbl.html"><div class="mainThumb"><img class="imThumb" src="russian_church/00000002/input.png" /><span class="mainLink">Russian church</span></div></a>
+<h2 style="text-align:center;font-family:sans-serif">Textured Meshes</h2>
+<a href="TEXTUREDMESHES/original/original.zip"><div class="mainThumb"><img class="imThumb" src="TEXTUREDMESHES/original/snapshot.png" /><span class="mainLink">Textured Mesh Original</span></div></a>
+<a href="TEXTUREDMESHES/relit1/relit1.zip"><div class="mainThumb"><img class="imThumb" src="TEXTUREDMESHES/relit1/snapshot.png" /><span class="mainLink">Textured Mesh Relit 1</span></div></a>
+<a href="TEXTUREDMESHES/relit2/relit2.zip"><div class="mainThumb"><img class="imThumb" src="TEXTUREDMESHES/relit2/snapshot.png" /><span class="mainLink">Textured Mesh Relit 2</span></div></a></br>
+</div></body>
