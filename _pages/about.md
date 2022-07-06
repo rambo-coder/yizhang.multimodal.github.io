@@ -75,5 +75,8 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 - *2022.06*, I presented [CLEAR Benchmark](http://clear-benchmark.github.io) on [CVPR'22 2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). 
 <!-- - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
-<!-- # 💻 Internships
-- *2015.09 - 2016.04*, [Lorem](https://github.com/), China. -->
+# 💻 Services
+- Organizer: CVPR’22 VPLOW Workshop (Challenge Track)
+- Reviewer: ECCV, CVPR (Outstanding reviewer), ICCV, NeurIPS, ICML.
+- Teaching (CMU): [Learning-based Image Synthesis](https://learning-image-synthesis.github.io/sp22/) and Advanced Computer Vision
+- Teaching (Cornell): Advanced Machine Learning, Cornell Tech Pre-Master Program, Functional Programming, Algorithm Analysis, Data Structures, Computer Vision
