@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zhiqiu Lin's website"
-description              : "Zhiqiu Lin's website"
+description              : ""
 repository               : "linzhiqiu/linzhiqiu.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -23,7 +23,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zhiqiu Lin"
   avatar           : "images/profile.jpg"
-  bio              : "PhD Student at Carnegie Mellon University"
+  bio              : "Ph.D. student at Carnegie Mellon University"
   location         : "Pittsburgh, PA"
   employer         :
   pubmed           : 
@@ -43,7 +43,7 @@ author:
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : https://www.linkedin.com/in/zhiqiu-lin-b49ba7126
+  linkedin         : zhiqiu-lin-b49ba7126
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
