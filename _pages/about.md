@@ -22,7 +22,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 🔥 News
-- *2022.06*: [The 1st CLEAR Challenge](http://clear-benchmark.github.io) was hosted on CVPR 2022 [2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). 
+- *2022.06*: [The 1st CLEAR Challenge](http://clear-benchmark.github.io) was hosted on CVPR 2022 [2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). Check out the [slides](/papers/clear/clear_cvpr.pdf) for a quick overview!
 - *2021.09*: &nbsp;🎉🎉 [The CLEAR Benchmark: Continual LEArning on Real-World Imagery](http://clear-benchmark.github.io) accepted by NeurIPS'21 (Datasets and Benchmarks Track). 
 - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)!
 
@@ -34,7 +34,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 
 **Zhiqiu Lin**, [Jia Shi](https://www.linkedin.com/in/elvishelvisshi/), [Deepak Pathak\*](https://www.cs.cmu.edu/~dpathak/), [Deva Ramanan\*](https://www.cs.cmu.edu/~deva/)
 
-[Website](http://clear-benchmark.github.io) \| [Arxiv](https://arxiv.org/abs/2201.06289)
+[Website](http://clear-benchmark.github.io) \| [Arxiv](https://arxiv.org/abs/2201.06289) \| [CVPR'22 Talk](/papers/clear/clear_cvpr.pdf)
 - The first continual benchmark for visual recognition with natural distribution shifts over a decade!
 - CLEAR has a 10- and 100-classes version ([download links](http://clear-benchmark.github.io)), similar to the famous CIFAR-10 and CIFAR-100 benchmarks.
 - [1st CLEAR challenge](https://www.aicrowd.com/challenges/cvpr-2022-clear-challenge) was hosted on June 19th, 2022. We have 79 participants from 21 different countries and regions signed up for the challenge!
