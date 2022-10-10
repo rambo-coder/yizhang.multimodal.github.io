@@ -36,10 +36,9 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 **Zhiqiu Lin**, [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/), [Deva Ramanan\*](https://www.cs.cmu.edu/~deva/), [Shu Kong\*](https://aimerykong.github.io/)
 
 [Website](https://linzhiqiu.github.io/papers/leco/) \| [Arxiv coming soon!](https://www.google.com) \| [NeurIPS'22 Talk](/papers/leco/LECO.pdf)
-- The first continual benchmark for visual recognition with natural distribution shifts over a decade!
-- CLEAR has a 10- and 100-classes version ([download links](https://linzhiqiu.gitbook.io/the-clear-benchmark/)), similar to the famous CIFAR-10 and CIFAR-100 benchmarks.
-- [1st CLEAR challenge](https://www.aicrowd.com/challenges/cvpr-2022-clear-challenge) was hosted on June 19th, 2022. We have 79 participants from 21 different countries and regions signed up for the challenge!
+- Details coming soon!
 
+</div>
 </div>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2021 (Datasets and Benchmarks)</div><img src='images/clear/icon_text.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -49,7 +48,9 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 **Zhiqiu Lin**, [Jia Shi](https://www.linkedin.com/in/elvishelvisshi/), [Deepak Pathak\*](https://www.cs.cmu.edu/~dpathak/), [Deva Ramanan\*](https://www.cs.cmu.edu/~deva/)
 
 [CLEAR Wiki](https://linzhiqiu.gitbook.io/the-clear-benchmark/) \| [NeurIPS Paper Site](http://clear-benchmark.github.io) \| [Arxiv](https://arxiv.org/abs/2201.06289) \| [CVPR'22 Talk](/papers/clear/clear_cvpr.pdf)
-- More details to come soon!
+- The first continual benchmark for visual recognition with natural distribution shifts over a decade!
+- CLEAR has a 10- and 100-classes version ([download links](https://linzhiqiu.gitbook.io/the-clear-benchmark/)), similar to the famous CIFAR-10 and CIFAR-100 benchmarks.
+- [1st CLEAR challenge](https://www.aicrowd.com/challenges/cvpr-2022-clear-challenge) was hosted on June 19th, 2022. We have 79 participants from 21 different countries and regions signed up for the challenge!
 
 </div>
 </div>
