@@ -28,7 +28,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)!
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='papers/leco/images/examples.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='papers/leco/images/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Learning with an Evolving Class Ontology**
