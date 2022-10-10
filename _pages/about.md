@@ -22,7 +22,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 🔥 News
-- *2022.09*: &nbsp;🎉🎉 [LECO: Learning with an Evolving Class Ontology](https://linzhiqiu.github.io/papers/leco/) was accepted by on NeurIPS'22. Check out the [slides](/papers/leco/LECO.pdf) for a quick overview!
+- *2022.09*: &nbsp;🎉🎉 [LECO: Learning with an Evolving Class Ontology](https://linzhiqiu.github.io/papers/leco/) was accepted by NeurIPS'22. Check out the [website](https://linzhiqiu.github.io/papers/leco/) and [slides](/papers/leco/LECO.pdf) for a quick overview!
 - *2022.06*: [The 1st CLEAR Challenge](http://clear-benchmark.github.io) was hosted on CVPR'22 [2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). Check out the [slides](/papers/clear/clear_cvpr.pdf) for a quick overview!
 - *2021.09*: &nbsp;🎉🎉 [The CLEAR Benchmark: Continual LEArning on Real-World Imagery](http://clear-benchmark.github.io) accepted by NeurIPS'21 (Datasets and Benchmarks Track). 
 - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)!
