@@ -35,8 +35,9 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 
 **Zhiqiu Lin**, [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/), [Deva Ramanan\*](https://www.cs.cmu.edu/~deva/), [Shu Kong\*](https://aimerykong.github.io/)
 
-[Website](https://linzhiqiu.github.io/papers/leco/) \| [Arxiv coming soon!](https://www.google.com) \| [NeurIPS'22 Talk](/papers/leco/LECO.pdf)
-- Details coming soon!
+[Website](https://linzhiqiu.github.io/papers/leco/) \| [Arxiv](https://arxiv.org/abs/2210.04993) \| [NeurIPS'22 Talk](/papers/leco/LECO.pdf)
+- A practical lifelong vision benchmark motivated by real-world dataset versioning issues, e.g., Argoverse 1.0 to 2.0.
+- Simple but efficient solutions such as semi-supervised learning, joint training, and learning-with-partial-labels to address inconsistent annotation (both coarse-grained and fine-grained).
 
 </div>
 </div>
