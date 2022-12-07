@@ -1,0 +1,205 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<html>
+  <head>
+    <title>Multimodality Helps Unimodality:
+    Cross-Modal Few-Shot Learning with Multimodal Models</title>
+    <meta property="og:title" content="LECO" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Multimodality Helps Unimodality: <br>
+    Cross-Modal Few-Shot Learning with Multimodal Models
+</span>
+    </center>
+
+    <br><br>
+      <table align=center width=800px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px"><a href="http://linzhiqiu.github.io">Zhiqiu Lin*<sup>1</sup></a></span>
+         </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://scholar.google.com/citations?user=gxRDkLMAAAAJ&hl=en">Samuel Yu*<sup>1</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://www.linkedin.com/in/zhiyikuang/">Amelia Kuang<sup>1</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak<sup>1</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <center>
+          <span style="font-size:20px"><a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan<sup>1</sup></a></span>
+          </center>
+        </td>
+     </tr>
+     </table>
+
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px">Carnegie Mellon University<sup>1</sup></span>
+         </td>
+        <!-- <td align=center width=100px>
+          <span style="font-size:20px">Citi<sup>2</sup></span>
+        </td> -->
+      </tr>
+    </table>
+
+    <hr>
+    
+
+      <!-- <center>
+        <h1>Presentation Slides</h1>
+      </center>
+      <center><iframe
+        src="https://docs.google.com/presentation/d/e/2PACX-1vSNT8o7bVxlFCNtrNDVBCJVaibUDvkOxqCxLbhv5pbaZ_dCDVn73nVPGS-fzkl_njZimq4vzyzM4RzR/embed?start=false&loop=true&delayms=5000"
+        frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true"
+        webkitallowfullscreen="true"></iframe></center> -->
+      <p align=center style="width:1000px; padding: 0px 0px 0px 60px">This is a work in submission as of Dec 2022. Please check it out using the following links:</p>
+            <table align=center width=400px>
+              <tr>
+                <td align=center width=100px>
+                  <span style="font-size:20px; text-align:center;"><a href="http://TODO">[Arxiv]</a></span>
+                </td>
+                <td align=center width=100px>
+                  <center>
+                  <span style="font-size:20px"><a href="https://github.com/linzhiqiu/cross_modal_adaptation">[Code]</a></span>
+                  </center>
+                </td>
+              </tr>
+            </table>
+      <br>
+      <hr>
+      
+      <table align=center width=1000px>
+        <tr>
+          <center>
+            <h1>Abstract</h1>
+          </center>
+            <td><img style="width:800px" src="./images/motivation_github.png" /></td>
+        </tr>
+        
+      </table>
+        <!-- <br> -->
+    <p align=left style="width:1000px; padding: 0px 0px 0px 60px">
+      The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of
+      intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples
+      may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn
+      new concepts efficiently. In this work, we demonstrate that one can indeed build a better <b>visual</b> dog classifier by
+      <b>read</b>ing about dogs and <b>listen</b>ing to them bark. To do so, we exploit the fact that recent multimodal
+      foundation models such as CLIP are inherently cross-modal, mapping different modalities to the same representation
+      space. Specifically, we propose a simple <b>cross-modal adaptation</b> approach that learns from few-shot examples
+      spanning different modalities. By repurposing class names as additional one-shot training samples, we achieve SOTA
+      results with an embarrassingly simple linear classifier for vision-language adaptation. Furthermore, we show that our
+      approach can benefit existing methods such as prefix tuning and classifier ensembling. Finally, to explore other
+      modalities beyond vision and language, we construct the first (to our knowledge) audiovisual few-shot benchmark and use
+      cross-modal training to improve the performance of both image and audio classification.</p>
+
+      <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>Few-shot learning are less ambiguous with multimodality</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Classic uni-modal few-shot setups (e.g., one-shot image classification) often face an inherent ambiguity -- if the training image contains a golden retriever
+         wearing a hat, how does the learner know if the task is to find <i>dogs</i>, <i>golden retrievers</i>, or even <i>hats</i>? On the other hand, humans have little trouble understanding and even generalizing from as few as one example. How so? We argue that humans make use of multiple modalities when learning
+         concepts. The example below demonstrates a one-shot learning scenario where the target concept is ambiguous, but becomes
+         clear once we add information from other modalities like language and sound.</p>
+         <center><img style="width:500px" src="./images/setup.png" /></center>
+         <br>
+      </table>
+
+      <hr>
+      <table align=center width=800>
+       <center><h1>Cross-modal adaptation with multimodal models</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">In this paper, we demonstrate that cross-modal understanding of different modalities (such as image-text or image-audio)
+         can improve the performance of individual modalities. That is, <b>read</b>ing about dogs and <b>listen</b>ing to them bark
+         can help build a better <b>visual</b> classifier for them! To do so, we present a remarkably simple strategy for
+         cross-modal few-shot adaptation: <b>we treat examples from different modalities as additional few-shot examples</b>. Learning is straightforward
+         when using frozen textual and visual encoders, such as CLIP~\cite{radford2021learning}, that map different modalities to
+         the same representational space. In essence, we have converted the "n-shot" problem to a "(n+1)-shot" problem!</p> 
+         <center><img style="width:800px" src="./images/methodology.png" /></center>
+        <br>
+      </table>
+
+      <hr>
+      <table align=center width=800>
+        <center>
+          <h1>SOTA few-shot performance on 11 downstream classification tasks</h1>
+        </center>
+        <tr>
+        <p align=left style="width:1000px; padding: 0px 0px 0px 60px">In contrast to our cross-modal adaptation approach, most prior works simply follow the popular practice of finetuning unimodal
+        foundation models, such as linear probing (<a href="https://openai.com/blog/clip/">CLIP</a>) for large vision models, or prompting (<a href="https://github.com/KaiyangZhou/CoOp">CoOp and CoCoOp</a>) and adapter (<a href="https://github.com/gaopengcuhk/Tip-Adapter">Tip-Adapter</a>) for large language
+        models. We find that all existing
+        methods (including <a href="https://github.com/mlfoundations/wise-ft">WiSE-FT</a>) repurpose the additional text features as
+        <i>classifier weights</i> instead of <i>training samples</i>. In this paper, we adopt the standard few-shot image classification benchmark for CLIP with 11 diverse datasets (e.g., ImageNet) and demonstrate that our method is
+        a more effective use of text information (even a simple linear classifier can achieve SOTA) but can also benefit prior unimodal few-shot approaches.</p></tr>
+        <center>
+        <tr>
+          <td><img style="width:565px" src="./images/sota.png" /></td>
+          <td><img style="width:400px" src="./images/augment_sota.png" /></td>
+        </tr>
+        </center>
+
+        <!-- <tr><p align=left style="width:1000px; padding: 0px 0px 0px 60px">In addition, we show in paper our approach also achieves the best training efficiency and test-time robustness to distribution shifts (e.g., from ImageNet to ImageNetV2).</p></tr> -->
+      
+      </table>
+      <br>
+
+      <hr>
+      <table align=center width=800>
+       <center><h1>Audios <b>can</b> improve image classification</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">We show that cross-modal adaption can generalize to audio modality (with the use of <a href="https://github.com/AndreyGuzhov/AudioCLIP">AudioCLIP</a>). In other words, one can learn a
+      better dog <b>visual</b> classifier by <b>listening</b> to a dog barking. Please check out the paper for our audiovisual few-shot learning benchmark and full experiments.</p> 
+       <center><img style="width:400px" src="./images/audio.png" /></center>
+      <br>
+
+          
+      </table>
+
+      <br>
+      <hr>
+      <table align=center width=900>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="./images/neuro.png"><img style="width:200px" src="./images/neuro.png"/></a></td>
+            <td><span style="font-size:14pt">Zhiqiu Lin, Samuel Yu, Zhiyi Kuang, Deepak Pathak, Deva Ramanan.<br>
+                <i>Multimodality Helps Unimodality: <br>
+                Cross-Modal Few-Shot Learning with Multimodal Models</i><br>
+              In Submission.<br>
+                <a href="TODO">[Arxiv]</a> &nbsp; &nbsp;
+                <a href="https://github.com/linzhiqiu/cross_modal_adaptation">[Code]</a> &nbsp; &nbsp;
+            </td>
+          
+          </tr>
+            
+      </table> <br>
+      <center>Bibtex:</center> <br>
+      <div align=center style="width:800">
+      <pre><code>TODO</code></pre></div>
+
+
+      <br>
+    <hr>
+
+
+      <table align=center width=1100px>
+        <tr>
+          <td>
+            <left>
+              <center>
+                <h1>Acknowledgements</h1>
+              </center>
+              This research was supported by CMU Argo AI Center for Autonomous Vehicle Research.
+            </left>
+          </td>
+        </tr>
+      </table>
+
+      <br><br>
+</body>
+</html>
