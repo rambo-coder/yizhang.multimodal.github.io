@@ -28,6 +28,20 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)!
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Work in submission.</div><img src='papers/cross_modal/images/neuro.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models**
+
+**Zhiqiu Lin**\*, [Samuel Yu\*](https://scholar.google.com/citations?user=gxRDkLMAAAAJ&hl=en), [Zhiyi Kuang](https://www.linkedin.com/in/zhiyikuang/), [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Deva Ramanan](https://www.cs.cmu.edu/~deva/)
+
+[Website](https://linzhiqiu.github.io/papers/cross_modal/) \| [Arxiv to come](TODO)
+- We purpose a simple cross-modal adaptation method for multimodal models that repurposes information from other modalities (e.g., class names) as additional training samples.
+- For CLIP, it achieves SOTA few-shot adaptation performance even with simple **linear probing**, and consistently improves prior art such as prompting, adapter, and WiSE-FT.
+- Audiovisual experiments with AudioCLIP suggest that one can learn a better dog **visual** classifier by **listening** to them bark.
+
+</div>
+</div>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='papers/leco/images/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
