@@ -45,13 +45,13 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='papers/leco/images/teaser.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-**Learning with an Evolving Class Ontology**
+**LECO: Continual Learning with Evolving Class Ontologies**
 
 **Zhiqiu Lin**, [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Yu-Xiong Wang](https://yxw.web.illinois.edu/), [Deva Ramanan\*](https://www.cs.cmu.edu/~deva/), [Shu Kong\*](https://aimerykong.github.io/)
 
 [Website](https://linzhiqiu.github.io/papers/leco/) \| [Arxiv](https://arxiv.org/abs/2210.04993) \| [NeurIPS'22 Talk](/papers/leco/LECO.pdf)
-- A practical lifelong vision benchmark motivated by real-world dataset versioning issues, e.g., Argoverse 1.0 to 2.0.
-- Simple but efficient solutions such as semi-supervised learning, joint training, and learning-with-partial-labels to address inconsistent annotation (both coarse-grained and fine-grained).
+- A practical lifelong vision benchmark motivated by real-world dataset versioning issues, e.g., Mapillary 1.2 to 2.0.
+- Simple but effective solutions such as joint training, semi-supervised learning, and learning-with-partial-labels to address inconsistent annotation (both coarse-grained and fine-grained).
 
 </div>
 </div>
