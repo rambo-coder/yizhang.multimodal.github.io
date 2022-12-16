@@ -102,7 +102,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 - *2016.09 - 2020.06*, Undergraduate, Cornell University.
 
 # 💬 Invited Talks
-- *2022.06*, I presented [CLEAR Benchmark](http://clear-benchmark.github.io) on [CVPR'22 2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). 
+- *2022.06*, I presented [CLEAR Benchmark](https://linzhiqiu.gitbook.io/the-clear-benchmark/) on [CVPR'22 2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). 
 <!-- - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Services
