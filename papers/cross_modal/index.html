@@ -88,7 +88,7 @@
       </table>
         <!-- <br> -->
     <p align=left style="width:1000px; padding: 0px 0px 0px 60px">
-      The ability to quickly learn a new task with minimal instruction - known as few-shot learning - is a central aspect of
+      The ability to quickly learn a new task with minimal instruction -- known as few-shot learning -- is a central aspect of
       intelligent agents. Classical few-shot benchmarks make use of few-shot samples from a single modality, but such samples
       may not be sufficient to characterize an entire concept class. In contrast, humans use cross-modal information to learn
       new concepts efficiently. In this work, we demonstrate that one can indeed build a better <b>visual</b> dog classifier by
@@ -105,9 +105,9 @@
           <td align=center width=100px>
             <span style="font-size:20px; text-align:center;"><a href="http://arxiv.org/abs/2301.06267">[Arxiv]</a></span>
           </td>
-          <td align=center width=100px>
+          <!-- <td align=center width=100px>
             <span style="font-size:20px; text-align:center;"><a href="https://linzhiqiu.github.io/papers/cross_modal/zhiqiu_cross_modal.pdf">[PDF]</a></span>
-          </td>
+          </td> -->
           <td align=center width=100px>
             <center>
               <span style="font-size:20px"><a href="https://github.com/linzhiqiu/cross_modal_adaptation">[Code]</a></span>
@@ -120,11 +120,11 @@
       <hr>
       <table align=center width=800>
        <center><h1>Few-shot learning are less ambiguous with multimodality</h1></center>
-       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Classic uni-modal few-shot setups (e.g., one-shot image classification) often face an inherent ambiguity -- if the training image contains a golden retriever
-         wearing a hat, how does the learner know if the task is to find <i>dogs</i>, <i>golden retrievers</i>, or even <i>hats</i>? On the other hand, humans have little trouble understanding and even generalizing from as few as one example. How so? We argue that humans make use of multiple modalities when learning
-         concepts. The example below demonstrates a one-shot learning scenario where the target concept is ambiguous, but becomes
-         clear once we add information from other modalities like language and sound.</p>
-         <center><img style="width:500px" src="./images/setup.png" /></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">A classic uni-modal few-shot setup can have an <b>underspecified</b> training set. For example, if the one-shot training image contains a golden retriever
+         wearing a hat, how does the learner know if the task is to find <i>dogs</i>, <i>golden retrievers</i>, or even <i>hats</i>? On the other hand, humans have little trouble understanding and even generalizing from as few as one example. How so? We argue that humans make use of cross-modality when learning
+         concepts. The example below demonstrates a one-shot learning scenario where the target concept is ambiguous with only vision modality, but becomes
+         clear once we add information from other modalities like language and sound. </p>
+         <center><img style="width:500px" src="./images/motivation_new.png" /></center>
          <br>
       </table>
 
@@ -136,7 +136,7 @@
          can help build a better <b>visual</b> classifier for them! To do so, we present a remarkably simple strategy for
          cross-modal few-shot adaptation: <b>we treat examples from different modalities as additional few-shot examples</b>. Learning is straightforward
          when using frozen textual and visual encoders, such as <a href="https://openai.com/blog/clip/">CLIP</a>, that map different modalities to
-         the same representational space. In essence, we have converted the "n-shot" problem to a "(n+1)-shot" problem!</p> 
+         the same representational space. Notably, language usually comes for free in image classification datasets in the form of a textual label per class, making it easy for us to convert an "n-shot" problem to a "(n+1)-shot" problem!</p> 
          <center><img style="width:800px" src="./images/methodology.png" /></center>
         <br>
       </table>
