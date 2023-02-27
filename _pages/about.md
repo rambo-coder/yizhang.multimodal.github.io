@@ -22,7 +22,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 🔥 News
-- *2022.12*: Check out my recent work [Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models](https://linzhiqiu.github.io/papers/cross_modal/) on few-shot adaptation with CLIP that achieves SOTA performance via a simple "cross-modal" linear prob.
+- *2022.02*: [Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models](https://linzhiqiu.github.io/papers/cross_modal/) accepted by CVPR'23.
 - *2022.09*: [LECO: Continual Learning with Evolving Class Ontologies](https://linzhiqiu.github.io/papers/leco/) was accepted by NeurIPS'22. Check out the [website](https://linzhiqiu.github.io/papers/leco/) and [slides](/papers/leco/LECO.pdf) for a quick overview!
 - *2022.06*: [The 1st CLEAR Challenge](http://clear-benchmark.github.io) was hosted on CVPR'22 [2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). Check out the [slides](/papers/clear/clear_cvpr.pdf) for a quick overview!
 - *2021.09*: [The CLEAR Benchmark: Continual LEArning on Real-World Imagery](http://clear-benchmark.github.io) accepted by NeurIPS'21 (Datasets and Benchmarks Track). 
@@ -30,7 +30,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)! -->
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Work in submission.</div><img src='papers/cross_modal/images/neuro.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='papers/cross_modal/images/neuro.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models**
