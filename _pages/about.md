@@ -22,7 +22,8 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 # 🔥 News
-- *2023.04*: I will be interning at Meta Reality Lab (now GenerativeAI) this summer on vision-language models.
+- *2023.05*: My recent work [VisualGPTScore: Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores](https://linzhiqiu.github.io/papers/visual_gpt/) challenges the prevailing belief that VLMs are mere bag-of-word models and demonstrate top-tier performance on compositionality benchmarks such as ARO/Crepe!
+- *2023.04*: I will be interning at Meta GenAI this summer on vision-language models.
 - *2023.02*: [Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models](https://linzhiqiu.github.io/papers/cross_modal/) accepted by CVPR'23.
 - *2022.09*: [LECO: Continual Learning with Evolving Class Ontologies](https://linzhiqiu.github.io/papers/leco/) was accepted by NeurIPS'22. Check out the [website](https://linzhiqiu.github.io/papers/leco/) and [slides](/papers/leco/LECO.pdf) for a quick overview!
 - *2022.06*: [The 1st CLEAR Challenge](http://clear-benchmark.github.io) was hosted on CVPR'22 [2nd Workshop on Open World Vision](https://www.cs.cmu.edu/~shuk/vplow.html). Check out the [slides](/papers/clear/clear_cvpr.pdf) for a quick overview!
@@ -31,6 +32,21 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)! -->
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In submission.</div><img src='papers/visual_gpt/images/teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+**VisualGPTScore: Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores**
+
+**Zhiqiu Lin**\*, [Xinyue Chen\*](https://www.linkedin.com/in/xinyue-chen-073a4114b/), [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Pengchuan Zhang](https://pzzhang.github.io/pzzhang/), [Deva Ramanan](https://www.cs.cmu.edu/~deva/)
+
+[Website](https://linzhiqiu.github.io/papers/visual_gpt_score/) \| Arxiv \| [![](https://img.shields.io/github/stars/linzhiqiu/visual_gpt_score?style=social&label=Code+Stars)](https://github.com/linzhiqiu/visual_gpt_score)
+- We use **VisualGPTScore**, the conditional likelihood P(text|image) of an image-conditioned language model (like BLIP) to address visio-linguistic compositionality benchmarks, such as ARO and Crepe.
+- Such multimodal generative scores achieve top-tier image-text retrieval performance, surpassing the SOTA discriminative score (such as ITMScore) by a great margin without incurring computational overhead.
+- Furthermore, we factorize VisualGPTScore into a product of the marginal P(text) and the Pointwise Mutual Information (PMI), in order to (a) diagnose datasets with strong language bias, and (b) debias results on other benchmarks like Winoground.
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2023</div><img src='papers/cross_modal/images/neuro.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 

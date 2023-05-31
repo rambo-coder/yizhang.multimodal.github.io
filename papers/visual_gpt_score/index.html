@@ -1,0 +1,237 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<html>
+  <head>
+    <title>VisualGPTScore:
+      Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores</title>
+    <meta property="og:title" content="VisualGPTScore" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores
+</span>
+    </center>
+
+    <br><br>
+      <table align=center width=800px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px"><a href="http://linzhiqiu.github.io">Zhiqiu Lin*<sup>1</sup></a></span>
+         </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://www.linkedin.com/in/xinyue-chen-073a4114b/">Xinyue Chen*<sup>1</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <span style="font-size:20px"><a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak<sup>1</sup></a></span>
+        </td>
+        <td align=center width=110px>
+          <span style="font-size:20px"><a href="https://pzzhang.github.io/pzzhang/">Pengchuan Zhang<sup>2</sup></a></span>
+        </td>
+        <td align=center width=100px>
+          <center>
+          <span style="font-size:20px"><a href="https://www.cs.cmu.edu/~deva/">Deva Ramanan<sup>1</sup></a></span>
+          </center>
+        </td>
+     </tr>
+     </table>
+
+    <table align=center width=700px>
+      <tr>
+        <td align=center width=100px>
+           <span style="font-size:20px">Carnegie Mellon University<sup>1</sup></span>
+         </td>
+        <td align=center width=100px>
+          <span style="font-size:20px">Meta<sup>2</sup></span>
+        </td>
+      </tr>
+    </table>
+
+    <hr>
+    
+
+    <!-- <center>
+      <h1>CVPR 2022 Presentation</h1>
+    </center>
+    <table align=center width=900px>
+      <tr>
+        <td width=600px>
+          <center>
+            <div class="video">
+              <iframe width="720" height="405" src="https://www.youtube.com/embed/_Rc72L2njcs" frameborder="0"
+                allowfullscreen></iframe>
+            </div>
+          </center>
+        </td>
+      </tr>
+    </table>
+      <br><hr> -->
+      <table align=center width=1000px>
+        <tr>
+          <center>
+            <h1>Abstract</h1>
+          </center>
+            <td><img style="width:800px" src="./images/teaser.png" /></td>
+        </tr>
+        
+      </table>
+        <!-- <br> -->
+    <p align=left style="width:1000px; padding: 0px 0px 0px 60px">
+      Vision-language models (VLMs) discriminatively pre-trained with contrastive image-text matching losses such as P(match|text, image) have been criticized for lacking compositional understanding. 
+      This means they might output similar scores even if the original caption is rearranged into a different semantic statement. 
+      To address this, we propose to use the <b>V</b>isual <b>G</b>enerative <b>P</b>re-<b>T</b>raining Score (<b>VisualGPTScore</b>) of $P(text|image), 
+      a <i>multimodal generative</i> score that captures the likelihood of a text caption conditioned on an image using an image-conditioned language model. 
+      Contrary to the belief that VLMs are mere bag-of-words models, our off-the-shelf VisualGPTScore demonstrates top-tier performance on recently proposed 
+      image-text retrieval benchmarks like ARO and Crepe that assess compositional reasoning. Furthermore, we factorize VisualGPTScore into a product of 
+      the <i>marginal</i> P(text) and the <i>Pointwise Mutual Information</i> (PMI). This helps to (a) diagnose datasets with strong language bias, 
+      and (b) debias results on other benchmarks like Winoground using an information-theoretic framework. 
+      VisualGPTScore provides valuable insights and serves as a strong baseline for future evaluation of visio-linguistic compositionality.
+      </p>
+      <table align=center width=400px>
+        <tr>
+          <td align=center width=100px>
+            <span style="font-size:20px; text-align:center;"><a href="http://arxiv.org/abs/2301.06267">[Arxiv]</a></span>
+          </td>
+          <td align=center width=100px>
+            <center>
+              <span style="font-size:20px"><a href="https://github.com/linzhiqiu/visual_gpt_score">[Code]</a></span>
+            </center>
+          </td>
+        </tr>
+      </table>
+
+      <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>Generative Score for Visio-Linguistic Compositionality</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Mainstream VLMs evaluated with discriminative scores that model
+        P(match|text, image) like the ITMScore fail to generalize to compositional reasoning benchmarks. 
+        We show that our off-the-shelf VisualGPTScore trained with generative language modelling loss achieves top-tier performance on these benchmarks without additional fine-tuning.</p>
+         <center><img style="width:500px" src="./images/tab1.png" /></center>
+         <br>
+      </table>
+
+      <hr>
+      <table align=center width=800>
+       <center><h1>Information-Theoretic Factorization of VisualGPTScore</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">To have a better understanding of the performance discrepancy across benchmarks, we factorize VisualGPTScore as a product of marginal P(text) and Pointwise Mutual Information (PMI).</p> 
+         <center><img style="width:800px" src="./images/factor.png" /></center>
+         <p align=left style="width:1000px; padding: 0px 0px 0px 60px">By approximating P(text) with Monte Carlo sampling, we show that some benchmarks such as ARO and Crepe can be partially addressed via P(text). Importantly, solutions that ignore images can still outperform SOTA algorithms trained on carefully-tuned negative samples such as <a href="https://arxiv.org/pdf/2210.01936.pdf">NegCLIP</a>. This makes it hard to interpret the progress these methods have made in bridging the visio-linguistic compositionality gap. 
+         </p> 
+         <center><img style="width:800px" src="./images/tab2.png" /></center>
+         <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Meanwhile, PMI, the "debiased" version of VisualGPTScore can significantly boost its performance on balanced benchmarks such as Winoground and EqBen. Intuitively, this debiasing procedure mitigates the tendency of VisualGPTScore to always assign
+          higher scores (regardless of the image) to more "common" texts (like "the person on top of the world")
+          compared to less "common" texts (like "the world on top of the person"), since both texts have the
+          same chance of being positive in Winoground testset.
+        </p> 
+        <br>
+      </table>
+
+      <hr>
+      <table align=center width=800>
+        <center>
+          <h1>VisualGPTScore as a Diagnostic Tool of Language Bias</h1>
+        </center>
+        <!-- <tr> -->
+        <p align=left style="width:1000px; padding: 0px 0px 0px 60px">We attempt to systematically analyze the language bias of recent visio-linguistic benchmarks. Specifically, we make reasonable assumptions in our paper and examine two hypothetical scenarios of the train-test shift of P(text). </p>
+        <center><img style="width:800px" src="./images/scenario.png" /></center>
+        <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Theoretically, scenario (1) implies the optimal score is VisualGPTScore, and scenario 2 implies that the optimal score is PMI. Based on this, we repurpose VisualGPTScore as a diagnostic tool by introducing a tunable alpha in [0,1] that weighs the contribution of each component. </p>
+        <center><img style="width:800px" src="./images/alpha_tune.png" /></center>
+        <p align=left style="width:1000px; padding: 0px 0px 0px 60px">When increasing alpha from 0 to 1, we observe that performance decreases the most for datasets like COCO-Order and
+          Flickr-Order, which are constructed with adversarial negative captions whose P<sub>train</sub>(text) are close to 0 and
+          can satisfy the first scenario in a trivial fashion. </p>
+        <center><img style="width:800px" src="./images/alpha_tune_chart.png" /></center>
+      <!-- </tr> -->
+        <!-- <center>
+        <tr>
+          <td><img style="width:565px" src="./images/sota.png" /></td>
+          <td><img style="width:400px" src="./images/augment_sota.png" /></td>
+        </tr>
+        </center> -->
+
+        <!-- <tr><p align=left style="width:1000px; padding: 0px 0px 0px 60px">In addition, we show in paper our approach also achieves the best training efficiency and test-time robustness to distribution shifts (e.g., from ImageNet to ImageNetV2).</p></tr> -->
+      
+      </table>
+      <br>
+
+      <hr>
+      <table align=center width=800>
+       <center><h1>Training-Free Debiasing on Image-to-Text Retrieval Benchmarks</h1></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">Interestingly, the above alpha-tuning equation can be rewritten using the language of PMI<sup>k</sup>, a well-known variant of PMI that controls the amount of debiasing.       </p> 
+       <center><img style="width:700px" src="./images/alpha_tune_2.png" /></center>
+       <p align=left style="width:1000px; padding: 0px 0px 0px 60px">By tuning alpha on held-out validation sets, we can significantly improve the image-to-text retrieval results of VisualGPTScore on both classic and compositionality benchmarks.</p> 
+       <center><img style="width:700px" src="./images/alpha_tune_result_2.png" /></center>
+      <br>
+
+      
+
+          
+      </table>
+
+      <br>
+      
+      <hr>
+      <table align=center width=800>
+        <center>
+          <h1>Limitations and Future Work</h1>
+        </center>
+        <p align=left style="width:1000px; padding: 0px 0px 0px 60px">
+          We do not explore fine-tuning techniques due to computational constraints, but it is possible to enhance I-to-T retrieval performance using hard negative samples during training, such as with controllable generation. Furthermore, our analysis is
+based on simplified assumptions. For instance, the model might not accurately represent P<sub>train</sub>(text|image),
+a phenomenon we examine in paper. Estimating P<sub>train</sub>(text) by sampling gaussian noise
+images is potentially imprecise, and we encourage future VLMs to directly model P<sub>train</sub>(text).</p>
+        <!-- <center><img style="width:400px" src="./images/code.png" /></center> -->
+        <br> 
+      
+      
+      
+      
+      </table>
+
+      <br>
+      <hr>
+      <table align=center width=900>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="./images/teaser.png"><img style="width:200px" src="./images/teaser.png"/></a></td>
+            <td><span style="font-size:14pt">Zhiqiu Lin, Xinyue Chen, Deepak Pathak, Pengchuan Zhang, Deva Ramanan.<br>
+                <i>Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores</i><br>
+              In submission.<br>
+                <a href="http://arxiv.org/abs/2301.06267">[Arxiv]</a> &nbsp; &nbsp;
+                <a href="https://github.com/linzhiqiu/visual_gpt_score">[Code]</a> &nbsp; &nbsp;
+            </td>
+          
+          </tr>
+            
+      </table> <br>
+      <!-- <center>Bibtex:</center> <br>
+      <div align=center style="width:800">
+      <pre><code>@article{linmultimodality,
+      title={Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models},
+      author={Lin, Zhiqiu and Yu, Samuel and Kuang, Zhiyi and Pathak, Deepak and Ramanan, Deva}
+      }</code></pre></div>
+
+
+      <br> -->
+    <hr>
+
+
+      <table align=center width=1100px>
+        <tr>
+          <td>
+            <left>
+              <center>
+                <h1>Acknowledgements</h1>
+              </center>
+              This research was supported by CMU Argo AI Center for Autonomous Vehicle Research.
+            </left>
+          </td>
+        </tr>
+      </table>
+
+      <br><br>
+</body>
+</html>
