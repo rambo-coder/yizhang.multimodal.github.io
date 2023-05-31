@@ -32,7 +32,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)! -->
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In submission.</div><img src='papers/visual_gpt/images/teaser.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In submission.</div><img src='papers/visual_gpt/images/teaser_small.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **VisualGPTScore: Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores**
@@ -40,7 +40,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 **Zhiqiu Lin**\*, [Xinyue Chen\*](https://www.linkedin.com/in/xinyue-chen-073a4114b/), [Deepak Pathak](https://www.cs.cmu.edu/~dpathak/), [Pengchuan Zhang](https://pzzhang.github.io/pzzhang/), [Deva Ramanan](https://www.cs.cmu.edu/~deva/)
 
 [Website](https://linzhiqiu.github.io/papers/visual_gpt_score/) \| Arxiv \| [![](https://img.shields.io/github/stars/linzhiqiu/visual_gpt_score?style=social&label=Code+Stars)](https://github.com/linzhiqiu/visual_gpt_score)
-- We use **VisualGPTScore**, the conditional likelihood P(text|image) of an image-conditioned language model (like BLIP) to address visio-linguistic compositionality benchmarks, such as ARO and Crepe.
+- We propose to use **Visual** **G**enerative **P**re-**T**raining Score (**VisualGPTScore**), the likelihood of a text conditioned on an image to address visio-linguistic compositionality benchmarks, such as ARO and Crepe.
 - Such multimodal generative scores achieve top-tier image-text retrieval performance, surpassing the SOTA discriminative score (such as ITMScore) by a great margin without incurring computational overhead.
 - Furthermore, we factorize VisualGPTScore into a product of the marginal P(text) and the Pointwise Mutual Information (PMI), in order to (a) diagnose datasets with strong language bias, and (b) debias results on other benchmarks like Winoground.
 
