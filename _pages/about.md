@@ -32,7 +32,7 @@ Hi! I am a third year PhD student at Robotics Institute of Carnegie Mellon Unive
 <!-- - *2020.06*: &nbsp;🎉🎉 Best Paper Nomination at CVPR'20 for [Visual Chirality](https://linzhiqiu.github.io/papers/chirality/)! -->
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In submission.</div><img src='papers/visual_gpt/images/teaser_small.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">In submission.</div><img src='papers/visual_gpt_score/images/teaser_small.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **VisualGPTScore: Visio-Linguistic Reasoning with Multimodal Generative Pre-Training Scores**
