@@ -82,7 +82,7 @@
     <p align=left style="width:1000px; padding: 0px 0px 0px 60px">
       Vision-language models (VLMs) discriminatively pre-trained with contrastive image-text matching losses such as P(match|text, image) have been criticized for lacking compositional understanding. 
       This means they might output similar scores even if the original caption is rearranged into a different semantic statement. 
-      To address this, we propose to use the <b>V</b>isual <b>G</b>enerative <b>P</b>re-<b>T</b>raining Score (<b>VisualGPTScore</b>) of $P(text|image), 
+      To address this, we propose to use the <b>V</b>isual <b>G</b>enerative <b>P</b>re-<b>T</b>raining Score (<b>VisualGPTScore</b>) of P(text|image), 
       a <i>multimodal generative</i> score that captures the likelihood of a text caption conditioned on an image using an image-conditioned language model. 
       Contrary to the belief that VLMs are mere bag-of-words models, our off-the-shelf VisualGPTScore demonstrates top-tier performance on recently proposed 
       image-text retrieval benchmarks like ARO and Crepe that assess compositional reasoning. Furthermore, we factorize VisualGPTScore into a product of 
